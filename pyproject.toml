@@ -1,0 +1,7 @@
+[project]
+requires-python = ">= 3.11"
+name = "lambda-runtimes"
+dynamic = ["version"]
+dependencies = [
+  "boto3",
+]
