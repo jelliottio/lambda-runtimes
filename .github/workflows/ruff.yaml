@@ -6,7 +6,7 @@ on:
 
 jobs:
   ruff:
-    runs-on: self-hosted
+    runs-on: ubuntu-22.04
     container:
       image: python:3.11-slim
     steps:
