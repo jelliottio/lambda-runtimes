@@ -20,4 +20,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install ruff
       - name: Run Ruff
-        run: ruff check --fix --output-format=github ./src
+        run: ruff check --fix --output-format=github .
