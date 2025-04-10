@@ -1,0 +1,22 @@
+name: Python Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-22.04
+    container:
+      image: python:3.11-slim
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.5.24"
+      - name: Install the project
+        run: uv sync --all-groups
+      - name: Run tests
+        run: uv run pytest tests -s -v
