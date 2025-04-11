@@ -4,4 +4,15 @@ name = "lambda-runtimes"
 dynamic = ["version"]
 dependencies = [
   "boto3",
+  "requests",
+  "tzdata"
+]
+[dependency-groups]
+dev = [
+  "pytest",
+  "pre-commit",
+  "requests"
+]
+lint = [
+  "ruff"
 ]
