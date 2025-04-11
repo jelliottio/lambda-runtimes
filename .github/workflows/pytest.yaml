@@ -22,4 +22,4 @@ jobs:
       - name: Install the project
         run: uv sync --all-groups
       - name: Run tests
-        run: uv run pytest tests -s -v
+        run: uv run pytest . -s -v
