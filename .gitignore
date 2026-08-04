@@ -1,0 +1,90 @@
+# ----------------------------
+# Python
+# ----------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Coverage / testing
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+# ----------------------------
+# uv
+# ----------------------------
+
+# uv cache
+.uv/
+
+# ----------------------------
+# Ruff / tooling
+# ----------------------------
+
+.ruff_cache/
+
+# ----------------------------
+# IDEs / Editors
+# ----------------------------
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ----------------------------
+# OS files
+# ----------------------------
+
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Environment / Secrets
+# ----------------------------
+
+.env
+.env.*
+*.pem
+*.key
+
+# AWS credentials (never commit)
+.aws/
+.aws/credentials
+.aws/config
+
+# ----------------------------
+# Project output
+# ----------------------------
+
+# Generated reports
+lambda_functions_report.json
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# ----------------------------
+# Jupyter
+# ----------------------------
+
+.ipynb_checkpoints/
