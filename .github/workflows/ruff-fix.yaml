@@ -31,7 +31,7 @@ jobs:
 
       - name: Install lint dependencies
         run: |
-          uv sync --only-group lint --no-install-package
+          uv sync --only-group lint --no-install-project
 
       - name: Apply Ruff fixes
         run: |
